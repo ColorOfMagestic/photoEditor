@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoEditor_2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <botton class="btn btn-back abs"><img src="images/back.svg" alt=""></botton>
+    <main class="app">
+      <section data-screen="0" class="intro-screen intro-screen__first abs">
+        <div class="container">
+          <div class="intro-screen__content flex-cc flex-col">
+            <img
+              class="intro-screen__img"
+              src="images/intro__BG__1.png"
+              alt=""
+            />
+            <button class="btn w400 screen-toggle">Tools</button>
+          </div>
+        </div>
+      </section>
+      <section data-screen="1" class="intro-screen intro-screen__second abs">
+        <div class="container">
+          <div class="intro-screen__content flex-cc flex-col">
+            <img
+              class="intro-screen__img"
+              src="images/intro__BG__2.png"
+              alt=""
+            />
+            <button class="btn w400 screen-toggle">Bright</button>
+          </div>
+        </div>
+      </section>
+      <section data-screen="2" class="intro-screen intro-screen__third abs">
+        <div class="container">
+          <div class="intro-screen__content flex-cc flex-col">
+            <img
+              class="intro-screen__img"
+              src="images/intro__BG__3.png"
+              alt=""
+            />
+            <button class="btn w400 screen-toggle">Proceed</button>
+          </div>
+        </div>
+      </section>
+      <section data-screen="3" class="photo flex-cc flex-col">
+        <div class="photo__header flex-cc">
+          <div class="photo__header__brand w600"><span>Photo</span>editor</div>
+        </div>
+        <img class="photo-img" src="images/photo.png" alt="" />
+        <div class="preview abs flex-cc">
+          <img src="images/photo.png" alt="">
+        </div>
+        <div class="add-image flex-cc flex-col">
+          <input class="add-image__input" type="file" name="file" hidden>
+          <button class=" btn add-image__btn">Add photo</button>
+        </div>
+        <div class="photo__footer abs">
+          <div class="container">
+            <div class="photo__buttons flex-cc">
+              <button
+                data-filter="invert"
+                class="btn photo__buttons-item flex-col"
+              >
+                <img class="" src="images/background.svg" alt="" />
+                Invert
+              </button>
+              <button data-filter="blur" class="btn photo__buttons-item flex-col">
+                <img src="images/blur.svg" alt="" /> Blur
+              </button>
+              <button data-filter="save" class="btn photo__buttons-item flex-col">
+                <img class="" src="images/save.svg" alt="" /> Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="dots abs flex-cc">
+        <span class="dot dot--active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
